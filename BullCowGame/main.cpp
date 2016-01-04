@@ -11,15 +11,20 @@ int main()
 {
 	PrintIntro();
 
-	GetGuessAndPrintBack();
-	GetGuessAndPrintBack();
+	// loop for the number of turns asking for guesses
+	constexpr int NUMBER_OF_TURNS = 5;
+	for (int count = 1; count <= NUMBER_OF_TURNS; count++)
+	{
+		GetGuessAndPrintBack();
+		cout << endl;
+	}
 
-	cout << endl;
 	return 0;
 }
 
 // introduce the game
-void PrintIntro() {
+void PrintIntro()
+{
 	constexpr int WORLD_LENGTH = 9;
 	cout << "Welcome to Bulls and Cows, a fun word game.\n";
 	cout << "Can you guess the " << WORLD_LENGTH;
@@ -28,8 +33,10 @@ void PrintIntro() {
 	return;
 }
 
-// get a guess from the player
-string GetGuessAndPrintBack() {
+
+string GetGuessAndPrintBack()
+{
+	// get a guess from the player
 	cout << "Enter your guess: ";
 	string Guess = "";
 	getline(cin, Guess);
