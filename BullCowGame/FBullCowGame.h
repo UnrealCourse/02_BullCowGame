@@ -1,8 +1,6 @@
 #pragma once
 #include <string>
 
-
-
 class FBullCowGame {
 public:
 	void Reset(); // TODO make a more rich return value.
@@ -14,6 +12,6 @@ public:
 
 // ^^ Please try and ignore this and focus on the interface above ^^
 private:
-	int MyCurrentTry;
-	int MyMaxTries;
+	int MyCurrentTry = 1;
+	int MyMaxTries = 5;
 };
