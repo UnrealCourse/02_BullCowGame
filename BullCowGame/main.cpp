@@ -23,14 +23,14 @@ int main()
 	return 0; // exit the application
 }
 
-
+ 
 // introduce the game
 void PrintIntro()
 {
-	constexpr int WORLD_LENGTH = 9;
+	constexpr int WORD_LENGTH = 9;
 	std::cout << "Welcome to Bulls and Cows, a fun word game.\n";
-	std::cout << "Can you guess the " << WORLD_LENGTH;
-	std::cout << " letter isogram I'm thinking of?\n";
+	std::cout << "Can you guess the " << WORD_LENGTH;
+	std::cout << " letter isogram I'm thinki ng of?\n";
 	std::cout << std::endl;
 	return;
 }
@@ -42,11 +42,18 @@ void PlayGame()
 	int MaxTries = BCGame.GetMaxTries();
 	
 	// loop for the number of turns asking for guesses
+	// TODO change from FOR to WHILE loop once we are validating tries
 	for (int count = 1; count <= MaxTries; count++) {
-		std::string Guess = GetGuess();
+		std::string Guess = GetGuess(); // TODO make loop checking valid
+		
+		// submit valid guess to the game
+		// print number of bulls and cows
+
 		std::cout << "Your guess was: " << Guess << std::endl;
 		std::cout << std::endl;
 	}
+
+	// TODO summarise game
 }
 
 
