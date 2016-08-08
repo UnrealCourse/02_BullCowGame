@@ -48,5 +48,12 @@ Click [here](https://www.udemy.com/unrealcourse?couponCode=GitHubDiscount) to fi
 * BC31 Handling Game Win Condition
 * BC32 Win or Lose Screen
 * BC33 Introducing Big O Notation
+* BC34 TMap and map Data Structures.cmproj
+* BC35 Range-based for Loop.cmproj
+* BC36 Design a Helper Function.cmproj
+* BC37 Playtesting Your Game.cmproj
+* BC38 Difficulty & Play Tuning.cmproj
+* BC39 Polishing & Packaging.cmproj
+* BCXX Section Wrap-up.cmproj
 
 This section contains around 5 hours of solid computer science and C++ introduction.
