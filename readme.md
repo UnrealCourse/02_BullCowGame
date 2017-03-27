@@ -56,4 +56,4 @@ Click [here](https://www.udemy.com/unrealcourse?couponCode=GitHubDiscount) to fi
 * BC39 Polishing & Packaging.cmproj
 * BCXX Section Wrap-up.cmproj
 
-This section contains around 5 hours of solid computer science and C++ introduction.
+This section contains around five hours of solid computer science and C++ introduction.
