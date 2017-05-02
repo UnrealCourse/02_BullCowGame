@@ -330,6 +330,3 @@ Write a method to print a game summary to the screen once the game is over.
 + Share your source code for others to play
 + Here are some suggested improvements
 + Next we take the game logic into Unreal :-)
-
----
-Find out more about our [Unreal Engine Developer Course](https://www.udemy.com/unrealcourse/?couponCode=GitHubDiscount).
