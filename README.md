@@ -1,4 +1,4 @@
-### Intro, Notes & Section 2 Assets ###
+### 1 Intro, Notes & Section 2 Assets ###
 
 + Welcome to the first actual coding video.
 + Why we’re doing this in the IDE only.
@@ -7,7 +7,7 @@
 + We’ll follow Unreal’s coding style, and re-use.
 + Notes and resources are attached.
 
-### S02 Game Design Document (GDD) ###
+### 2 S02 Game Design Document (GDD) ###
 
 + How much planning should we do?
 + Define the emotional problem the game solves\*
@@ -19,7 +19,7 @@
 **Useful Links**
 + \* [McConnell, Steve. _Code Complete._ Microsoft Press 2004. Chapter 3.3](https://www.amazon.com/gp/product/0735619670/)
 
-### How Solutions & Projects Relate ###
+### 3 How Solutions & Projects Relate ###
 
 + How projects and solutions relate.
 + Setting up a new command line project.
