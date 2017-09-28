@@ -197,7 +197,7 @@
 + Ideal for simple value types like **BullCowCount**
 + Outline **BullCowCount SubmitGuess(FString)**
 
-### Using if Statements in C++ ###
+### 24 Using if Statements in C++ ###
 
 + Why we need conditionals (selection)
 + Use **if** when it reads better (e.g. few conditions)
