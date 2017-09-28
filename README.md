@@ -100,7 +100,7 @@
 + Removing side-effects.
 + Where to find the course code on GitHub.
 
-### Booleans and comparisons ###
+### 12 Booleans and comparisons ###
 
 + What a boolean is, and how to use it.
 + Only use when completely clear what you mean.
