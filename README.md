@@ -26,7 +26,7 @@
 + An overview of the structure of our solution.
 + (Adding main.cpp to our project).
 
-### C++ Function Syntax ###
+### 4 C++ Function Syntax ###
 
 + The difference between an engine and a library.
 + How this relates to this console application.
@@ -36,7 +36,7 @@
 + Write the minimal C++ program to remove error.
 + Testing our application runs without error.
 
-### Using, #include and Namespaces ###
+### 5 Using, #include and Namespaces ###
 
 + **#** represents a “preprocessor directive”.
 + **#include** copies-and-pastes other code.
@@ -46,7 +46,7 @@
 + Notice the namespace icon in autocomplete.
 + Import **iostream** library and use **std** namespace.
 
-### Magic Numbers and Constants ###
+### 6 Magic Numbers and Constants ###
 
 + What a “magic number” is.
 + Why it’s a good idea to avoid them.
@@ -57,7 +57,7 @@
 **Useful Links**
 + \* [Unreal Engine - Coding Standard](https://docs.unrealengine.com/latest/INT/Programming/Development/CodingStandard/index.html)
 
-### Variables and cin for Input ###
+### 7 Variables and cin for Input ###
 
 + The difference between **\n** and **endl**
 + Introducing pseudocode programming
@@ -65,14 +65,14 @@
 + Getting input using **cin**
 + Discovering woes with our input buffer.
 
-### Using getline() ###
+### 8 Using getline() ###
 
 + Re-cap the problem we have.
 + Why **getline()** is useful here.
 + Where to find C++ documentation.
 + A word on non-obvious solutions.
 
-### Simplifying With Functions ###
+### 9 Simplifying With Functions ###
 
 + Programming is all about managing complexity.
 + We want to think about a few things at a time.
@@ -82,7 +82,7 @@
 + A warning about “side-effects” of functions.
 + Always use **return** at the end of your functions.
 
-### Iterating With For & While Loops ###
+### 10 Iterating With For & While Loops ###
 
 + Why we need loops.
 + When to use **for** vs **while**.
@@ -90,7 +90,7 @@
 + Think carefully about the first & last loop.
 + Write a **for** loop to repeat the game.
 
-### Clarity is Worth Fighting For ###
+### 11 Clarity is Worth Fighting For ###
 
 + More about levels of abstraction.
 + A word on being clever.
