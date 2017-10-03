@@ -155,7 +155,7 @@
 + Pros and cons of initialising in at compile time
 + Using “Rebuild Project” to make VS behave!
 
-### 18 Introducing the Const Keyword ###
+### 19 Introducing the Const Keyword ###
 
 + **const**’s meaning depends on context
 + Generally means “I promise not to change this”
