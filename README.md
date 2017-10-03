@@ -110,13 +110,13 @@
 + Use **[n]** to access a string, starting at n=0.
 + Use **‘ ‘** for characters, and **“ “** for strings.
 
-### Using do and while in C++ ###
+### 13 Using do and while in C++ ###
 
 + What a **do while** loop is.
 + How it executes code one or more times.
 + Making our game play multiple times.
 
-### Introducing Classes ###
+### 14 Introducing Classes ###
 
 + Lookup the Turing machine.
 + A quick overview of the MVC pattern.
@@ -124,21 +124,21 @@
 + About working at an interface level (black box).
 + An overview of class **FBullCowGame**
 
-### Using Header Files as Contracts ###
+### 15 Using Header Files as Contracts ###
 
 + Introducing .h header files in C++.
 + Why the added complexity is worth it.
 + Defining the interface to our class.
 + Writing our first draft of FBullCowGame.h
 
-### Including Our Own Header File ###
+### 16 Including Our Own Header File ###
 
 + NEVER use using namespace in a .h
 + In fact, why use it at all?
 + Create your .cpp files and **#include**
 + Don’t create chains of includes.
 
-### Instantiating Your Class ###
+### 17 Instantiating Your Class ###
 
 + Relax, they’re just user defined types!
 + string FirstName; creates a string object
@@ -147,7 +147,7 @@
 + Instantiating means “creating an instance of”
 + So we’re simply creating a game instance.
 
-### Writing & Using Getter Methods ###
+### 18 Writing & Using Getter Methods ###
 
 + What is a getter method
 + Why we never access variables directly
@@ -155,7 +155,7 @@
 + Pros and cons of initialising in at compile time
 + Using “Rebuild Project” to make VS behave!
 
-### Introducing the Const Keyword ###
+### 18 Introducing the Const Keyword ###
 
 + **const**’s meaning depends on context
 + Generally means “I promise not to change this”
@@ -163,7 +163,7 @@
 + At the end of a member function, for example **int GetCurrentTry() const;** it prevents the function from modifying any member variables
 + This is a good safety feature.
 
-### Constructors For Initialisation ###
+### 20 Constructors For Initialisation ###
 
 + Default constructor called when object created
 + Initialize in constructor when decided at runtime
@@ -172,7 +172,7 @@
 + Set the member variables in constructor
 + Test this has worked.
 
-### Pseudocode Programming ###
+### 21 Pseudocode Programming ###
 
 + More on Pseudocode Programming Practice (PPP)
 + Reviewing our code and architecture
@@ -180,7 +180,7 @@
 + Introducing Visual Studio’s Task List
 + Planning our next wave of coding.
 
-### Using using for Type Aliases ###
+### 22 Using using for Type Aliases ###
 
 + We’re substituting types to be “Unreal ready”
 + The declaration is **using \<alias\> = \<type\>;**
@@ -190,7 +190,7 @@
 + Where to use each type of string
 + Map **FText** and **FString** to **std::string**
 
-### Using struct for Simple Types ###
+### 23Using struct for Simple Types ###
 
 + **struct** is almost identical to **class**
 + It’s member variables (data) is public by default
@@ -206,21 +206,21 @@
 + The syntax of an **if** statement
 + Using **if** to write count bulls and cows.
 
-### Debugging 101 ###
+### 25 Debugging 101 ###
 
 + A very brief intro to Visual Studio’s debugger
 + Set a break-point by clicking in margin
 + Watch values by highlighting in debug mode
 + Use “Continue” to cycle back to breakpoint.
 
-### A Place for Everything ###
+### 26 A Place for Everything ###
 
 + Centralising the hidden word length
 + Making this a property of the game class
 + Writing a getter to access this value
 + Updating our intro to vary with word length.
 
-### Introducing enumerations ###
+### 27 Introducing enumerations ###
 
 + An **enum**erated type consists of named values
 + Use instead of coded meaning
@@ -229,14 +229,14 @@
 + A benefit of C++ 11’s strongly typed enums
 + Creating an **enum class** for error checking.
 
-### Writing Error Checking Code ###
+### 28 Writing Error Checking Code ###
 
 + Use **else if** for the first time
 + Outline or **CheckGuessValidity()** method
 + Write working code for checking guess length
 + Use the debugger to test the return values.
 
-### Using switch Statements ###
+### 29 Using switch Statements ###
 
 + Use our error values to communicate with user
 + All our user interaction is via **GameManager.cpp**
@@ -245,7 +245,7 @@
 + The syntax of a **switch** statement
 + Remember your **break** keywords!
 
-### Warm Fuzzy Feelings ###
+### 30 Warm Fuzzy Feelings ###
 
 + _Don’t_ get comfortable with compiler warnings
 + Refactor **GetValidGuess()** to remove warning
@@ -253,16 +253,16 @@
 + Improve readability of **SubmitValidGuess()**
 + Get a warm fuzzy feeling!
 
-### Handling Game Win Condition ###
+### 31 Handling Game Win Condition ###
 
 + Change our **PlayGame()** loop to a **while**
 + Implement our **IsGameWon()** function
 
-### Win or Lose "Screen" ###
+### 32 Win or Lose "Screen" ###
 
 Write a method to print a game summary to the screen once the game is over.
 
-### Introducing Big O Notation ###
+### 33 Introducing Big O Notation ###
 
 + Algorithm: the recipe for solving a problem
 + or: 45th US Vice President’s dance style
@@ -270,7 +270,7 @@ Write a method to print a game summary to the screen once the game is over.
 + A quick introduction to “Big O” notation
 + Comparing three ways of checking for isograms.
 
-### TMap and map Data Structures ###
+### 34 TMap and map Data Structures ###
 
 + The importance of knowing your data types
 + Introducing the **std::map** data type
@@ -280,7 +280,7 @@ Write a method to print a game summary to the screen once the game is over.
 + Using **LetterSeen[Letter]** to access
 + Wiring-up and pseudocoding **IsIsogram()**
 
-### Range-based for Loop ###
+### 35 Range-based for Loop ###
 
 + Introducing containers and iterators
 + Using a range-based for loop in Unreal\*
@@ -291,12 +291,12 @@ Write a method to print a game summary to the screen once the game is over.
 
 + \* [Unreal Engine - Ranged Based For Loops](https://www.unrealengine.com/blog/ranged-based-for-loops)
 
-### Design a Helper Function ###
+### 36 Design a Helper Function ###
 
 + Gain confidence with a multi-stage challenge
 + A word on implicit dependencies
 
-### Playtesting Your Game ###
+### 37 Playtesting Your Game ###
 
 + Having someone else play test your game is vital
 + Silently take notes, or record screen if possible
@@ -304,7 +304,7 @@ Write a method to print a game summary to the screen once the game is over.
 + For improvements consider 2nd or 3rd opinion
 + Repeat until the bug / issue rate plateaus.
 
-### Difficulty & Play Tuning ###
+### 38 Difficulty & Play Tuning ###
 
 + About the flow channel\*
 + **map** word length to max tries
@@ -314,7 +314,7 @@ Write a method to print a game summary to the screen once the game is over.
 
 + \* Read more in [Sylvester, T. Designing Games - O’Reilly](https://www.amazon.com/dp/B00AWKX1FO/)
 
-### Polishing & Packaging ###
+### 39 Polishing & Packaging ###
 
 + First impressions count (think reviews)
 + Don’t ship a half-baked product, even if digital
