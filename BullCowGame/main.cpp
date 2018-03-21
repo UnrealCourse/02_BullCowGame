@@ -10,27 +10,26 @@ user interaction. For game logic see the FBullCowGame class.
 
 // to make syntax Unreal friendly
 using FText = std::string;
-using int32 = int;
 
 // function prototypes as outside a class
 void PrintIntro();
 void PlayGame();
 FText GetValidGuess();
-bool AskToPlayAgain();
+bool PlayerWantsToPlayAgain();
 void PrintGameSummary();
+FText GetPlayerGuess();
 
 FBullCowGame BCGame; // instantiate a new game, which we re-use across plays
 
 // the entry point for our application
 int main()
 {
-	bool bPlayAgain = false;
-	do {
+	do
+	{
 		PrintIntro();
 		PlayGame();
-		bPlayAgain = AskToPlayAgain();
 	}
-	while (bPlayAgain);
+	while (PlayerWantsToPlayAgain());
 
 	return 0; // exit the application
 }
@@ -54,12 +53,11 @@ void PrintIntro()
 // plays a single game to completion
 void PlayGame()
 {
-	BCGame.Reset();
+	BCGame.Reset(); //reset the game "instance"
 	int32 MaxTries = BCGame.GetMaxTries();
 	
-	// loop asking for guesses while the game
-	// is NOT won and there are still tries remaining
-	while (!BCGame.IsGameWon() && BCGame.GetCurrentTry() <= MaxTries) {
+	while (!BCGame.IsGameWon() && BCGame.GetCurrentTry() <= MaxTries)
+	{
 		FText Guess = GetValidGuess();
 				
 		// submit valid guess to the game, and receive counts
@@ -78,12 +76,9 @@ FText GetValidGuess()
 {
 	FText Guess = "";
 	EGuessStatus Status = EGuessStatus::Invalid_Status;
-	do {
-		// get a guess from the player
-		int32 CurrentTry = BCGame.GetCurrentTry();
-		std::cout << "Try " << CurrentTry << " of " << BCGame.GetMaxTries();
-		std::cout << ". Enter your guess: ";
-		std::getline(std::cin, Guess);
+	do
+	{
+		Guess = GetPlayerGuess();
 
 		// check status and give feedback
 		Status = BCGame.CheckGuessValidity(Guess);
@@ -105,7 +100,18 @@ FText GetValidGuess()
 	return Guess;
 }
 
-bool AskToPlayAgain()
+FText GetPlayerGuess()
+{
+	int32 CurrentTry = BCGame.GetCurrentTry();
+	std::cout << "Try " << CurrentTry << " of " << BCGame.GetMaxTries();
+	std::cout << ". Enter your guess: ";
+
+	FText Guess;
+	std::getline(std::cin, Guess);
+	return Guess;
+}
+
+bool PlayerWantsToPlayAgain()
 {
 	std::cout << "Do you want to play again with the same hidden word (y/n)? ";
 	FText Response = "";
