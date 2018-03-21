@@ -7,7 +7,12 @@
 #define TMap std::map
 using int32 = int;
 
-FBullCowGame::FBullCowGame() { Reset(); } // default constructor
+FBullCowGame::FBullCowGame() // default constructor
+{ 
+	const FString HIDDEN_WORD = "plane"; // this MUST be an isogram
+	MyHiddenWord = HIDDEN_WORD;
+	Reset();
+} 
 
 int32 FBullCowGame::GetCurrentTry() const { return MyCurrentTry; }
 int32 FBullCowGame::GetHiddenWordLength() const { return MyHiddenWord.length(); }
@@ -21,14 +26,10 @@ int32 FBullCowGame::GetMaxTries() const
 
 void FBullCowGame::Reset()
 {
-	const FString HIDDEN_WORD = "plane"; // this MUST be an isogram
-	MyHiddenWord = HIDDEN_WORD;
-
 	MyCurrentTry = 1;
 	bGameIsWon = false;
 	return;
 }
-
 
 EGuessStatus FBullCowGame::CheckGuessValidity(FString Guess) const
 {
