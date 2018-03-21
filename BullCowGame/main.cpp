@@ -15,6 +15,7 @@ using FText = std::string;
 void PrintIntro();
 void PlayGame();
 FText GetValidGuess();
+void PrintResponseToGuess(EGuessStatus Status);
 bool PlayerWantsToPlayAgain();
 void PrintGameSummary();
 FText GetPlayerGuess();
@@ -79,25 +80,30 @@ FText GetValidGuess()
 	do
 	{
 		Guess = GetPlayerGuess();
-
-		// check status and give feedback
 		Status = BCGame.CheckGuessValidity(Guess);
-		switch (Status) {
-		case EGuessStatus::Wrong_Length:
-			std::cout << "Please enter a " << BCGame.GetHiddenWordLength() << " letter word.\n\n";
-			break;
-		case EGuessStatus::Not_Isogram:
-			std::cout << "Please enter a word witout repeating letters.\n\n";
-			break;
-		case EGuessStatus::Not_Lowercase:
-			std::cout << "Please enter all lowercase letters.\n\n";
-			break;
-		default:
-			// assume the guess is valid
-			break;
-		}
-	} while (Status != EGuessStatus::OK); // keep looping until we get no errors
+		PrintResponseToGuess(Status);
+	}
+	while (Status != EGuessStatus::OK); // keep looping until we get no errors
 	return Guess;
+}
+
+void PrintResponseToGuess(EGuessStatus Status)
+{
+	switch (Status)
+	{
+	case EGuessStatus::Wrong_Length:
+		std::cout << "Please enter a " << BCGame.GetHiddenWordLength() << " letter word.\n\n";
+		break;
+	case EGuessStatus::Not_Isogram:
+		std::cout << "Please enter a word witout repeating letters.\n\n";
+		break;
+	case EGuessStatus::Not_Lowercase:
+		std::cout << "Please enter all lowercase letters.\n\n";
+		break;
+	default:
+		// assume the guess is valid
+		break;
+	}
 }
 
 FText GetPlayerGuess()
