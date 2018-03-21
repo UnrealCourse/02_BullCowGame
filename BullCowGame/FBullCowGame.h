@@ -30,12 +30,14 @@ class FBullCowGame
 public:
 	FBullCowGame(); // constructor
 
+	// none of these const methods change the game state
 	int32 GetMaxTries() const;
 	int32 GetCurrentTry() const;
 	int32 GetHiddenWordLength() const;
 	bool IsGameWon() const;
 	EGuessStatus CheckGuessValidity(FString) const;
 
+	// methods below not const because the change the state of the game
 	void Reset();
 	FBullCowCount SubmitValidGuess(FString);
 
