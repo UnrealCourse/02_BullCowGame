@@ -198,7 +198,7 @@ You're welcome to download, fork or do whatever else legal with all the files! T
 + Where to use each type of string
 + Map **FText** and **FString** to **std::string**
 
-### 23Using struct for Simple Types ###
+### 23 Using struct for Simple Types ###
 
 + **struct** is almost identical to **class**
 + It’s member variables (data) is public by default
